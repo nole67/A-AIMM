@@ -1,0 +1,47 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif, 'Arial';
+  background: url(https://img.freepik.com/free-vector/white-minimal-hexagons-background_79603-1452.jpg?w=900&t=st=1659005159~exp=1659005759~hmac=13796130150d0e1647a37be2bb359291a15e20c20372c7eebde0251e2a70b518)  no-repeat center center fixed;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+hr {
+   margin: 20px auto;
+   color: #025388;
+   border: 1px solid #025388;
+   opacity: 0.5;  
+}
+
+.buffer{
+  height:  1rem;
+}
+
+.btn{
+  font-weight: 700;
+  border-radius: 300px;
+}
+
+.btn-primary{
+  background-color: #025388;
+  border-color: #025388;
+}
+
+.btn-primary:hover {
+  background-color: #04426B;
+  border-color: #04426B;
+}
+
+.btn-xl {
+  padding:  1rem 2rem;
+}
+
