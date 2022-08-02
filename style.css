@@ -45,8 +45,12 @@ hr {
   padding:  1rem 2rem;
 }
 
-a {
-  color: black;
+.Link-m {
+  color: #025388;
+}
+
+.Link-s {
+  color: #025388;
   font-size: 0.6em;
   margin: 5px;
 }
