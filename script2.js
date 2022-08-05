@@ -27,14 +27,61 @@ var Ergebnisse = [Number(section1), Number(section2), Number(section3), Number(s
 Number(section5), Number(section6), Number(section7), Number(section8)];
 
 //Definition der Handlungsempfehlungen pro Dimension
-var Empfehlung1 = ["D1R1", "D1R2", "D1R3", "D1R4", "D1R5"]
-var Empfehlung2 = ["D2R1", "D2R2", "D2R3", "D2R4", "D2R5"]
-var Empfehlung3 = ["D3R1", "D3R2", "D3R3", "D3R4", "D3R5"]
-var Empfehlung4 = ["D4R1", "D4R2", "D4R3", "D4R4", "D4R5"]
-var Empfehlung5 = ["D5R1", "D5R2", "D5R3", "D5R4", "D5R5"]
-var Empfehlung6 = ["D6R1", "D6R2", "D6R3", "D6R4", "D6R5"]
-var Empfehlung7 = ["D7R1", "D7R2", "D7R3", "D7R4", "D7R5"]
-var Empfehlung8 = ["D8R1", "D8R2", "D8R3", "D8R4", "D8R5"]
+var Empfehlung1 = 
+["Stellen Sie zur Erreichung des nächsten Reifelevels sicher, dass die IT-Infrastruktur in Ihrem Unternehmen auf den Einsatz von KI vorbereitet ist. Legen Sie dabei besonderen Wert auf die benötigte Sicherheit und Rechenleistung der Infrastruktur. Eingeschränkte KI-Funktionen wie Robotic Process Automation oder Data Analytics stellen einen guten Einstieg für die Nutzung von KI-Funktionen im Unternehmen dar. Auch weitere Einsatzmöglichkeiten von KI in der Wirtschaftsprüfung sollten aktiv recherchiert werden.",
+"Stellen Sie zur Erreichung des nächsten Reifelevels sicher, dass die IT-Infrastruktur in Ihrem Unternehmen bereits teilweise an den Einsatz von KI angepasst wurde und ein Konzept für eine zentralisierte KI-Plattform erstellt wird. Setzen Sie bspw. eingeschränkte KI-Funktionen wie Robotic Process Automation oder Data Analytics für spezifische Probleme ein, um von der Recherche zum Einsatz von KI überzugehen. Neue KI-Anwendungen sollten mit der Option für spätere Anpassungen und Erweiterungen gestaltet werden.",
+"Stellen Sie zur Erreichung des nächsten Reifelevels sicher, dass die IT-Infrastruktur in Ihrem Unternehmen zum Großteil an den Einsatz von KI angepasst ist und eine zentralisierte KI-Plattform eingerichtet wird. In allen Bereichen des Unternehmens sollte mindestens eine fortgeschrittene KI- Funktion für den täglichen Betrieb eingesetzt werden. Eingesetzte KI sollte zur eigenständigen Weiterentwicklung befähigt werden. Weiterhin sollten Kontrollen die korrekte Funktionsweise und Qualität der meisten KI-Systeme sicherstellen.",
+"Stellen Sie zur Erreichung des nächsten Reifelevels sicher, dass die IT-Infrastruktur in Ihrem Unternehmen vollständig an den Einsatz von KI angepasst ist und Ihr Unternehmen die aktuell führenden KI-Funktionen einsetzt. Ihre zentrale KI-Plattform sollte die schnelle Entwicklung neuer Anwendungsfälle ermöglichen und etablierte Kontrollen die korrekte Funktionsweise und Qualität von allen KI-Systemen sicherstellen.",
+"Die KI-Technologien in Ihrem Unternehmen haben bereits ein optimales Level erreicht!"]
+
+var Empfehlung2 =
+["Zur Verbesserung Ihrer aktuellen Reifestufe sollte damit begonnen werden, verschiedene Datenquellen miteinander zu verbinden. Die vorhandenen Unternehmensdaten sollten für erste rückblickende Datenanalysen genutzt und eine Untersuchung von Datenpipelines für die Übertragung und einheitliche Transformierung von Daten durchgeführt werden.",
+"Zur Verbesserung Ihrer aktuellen Reifestufe sollte die Verbindung von Datenquellen weitergeführt werden, um einen zentralen Zugriff auf Ihre Unternehmensdaten zu ermöglichen. Die Einrichtung von Datenpipelines kann die Qualität Ihrer Daten sicherstellen. Um besser von den Unternehmensdaten zu profitieren ist ein Übergang von deskriptiven (beschreibenden) zu präskriptiven (vorausschauenden) Datenanalysen empfehlenswert.",
+"Zur Verbesserung Ihrer aktuellen Reifestufe sollte eine automatische Sammlung und Analyse der Unternehmensdaten eingerichtet und die Datenpipelines direkt mit den KI-Instrumenten des Unternehmens verbunden werden. Beziehen Sie KI-basierte Datenanalysen in Unternehmensprozesse und Entscheidungsfindungen ein und stellen Sie zudem sicher, dass benötigte Daten problemlos zentral zugänglich sind.",
+"Zur Verbesserung Ihrer aktuellen Reifestufe sollten alle Unternehmensdaten in Echtzeit zugänglich sein und zudem automatisch gesammelt und für Datenanalysen genutzt werden, bspw. für die Gestaltung und Optimierung von Unternehmensprozessen. ",
+"Das Datenmanagement in Ihrem Unternehmen hat für die Nutzung von KI bereits ein optimales Level erreicht!"]
+
+var Empfehlung3 = 
+["Für eine Steigerung des Reifelevels sollten im Unternehmen erste Mitarbeiterschulungen durchgeführt werden, um eigene KI-Kompetenzen zu entwickeln und Mitarbeitern die Vorteile von KI näherzubringen. Mitarbeiterprofile sollten überarbeitet und um technologische Kompetenzen ergänzt werden. Um Unterstützung bei KI-Themen zu finden, sollte Ihr Unternehmen zudem mögliche Kooperationen mit externen KI-Partnern untersuchen.",
+"Für eine Steigerung des Reifelevels sollten die Mitarbeiter Ihres Unternehmens aktiv im Umgang mit KI geschult und dazu befähigt werden, einfache, unterstützende KI-Instrumente einzusetzen. Kooperationen mit externen KI-Partnern können zudem den weiteren Aufbau von KI-Kompetenzen im Unternehmen unterstützen.",
+"Für eine Steigerung des Reifelevels sollten sich unter den Mitarbeitern Ihres Unternehmens durch Schulungen oder Neueinstellungen eine wachsende Anzahl von Data Science und KI-Experten befinden, die dazu in der Lage sind, eigenständig die Plausibilität von Ergebnissen eingesetzter KI-Instrumente überprüfen und spezifische KI-Themen der Wirtschaftsprüfung zu bearbeiten.",
+"Für eine Steigerung des Reifelevels muss sichergestellt werden, dass in Ihrem Unternehmen ausreichende KI-Kenntnisse vorhanden sind, um die KI intern weiterzuentwickeln. Weiterhin ist es wichtig, Mitarbeiter weiter zum Einsatz von KI zu motivieren und eine datengetriebene Denkweise zu fördern.",
+"Das Personal Ihres Unternehmens ist bereits optimal auf den Einsatz von KI vorbereitet!"]
+
+var Empfehlung4 = 
+["Um das nächste Reifelevel zu erreichen, sollten Einbindungsmöglichkeiten von KI in verschiedenen Unternehmensabteilungen und -prozessen untersucht werden. Zudem sollten klare Richtlinien für den Ausbau von KI im Unternehmen entwickelt werden.", 
+"Um das nächste Reifelevel zu erreichen, sollte der abteilungsübergreifende Einsatz von KI untersucht werden. Zudem sollten klare Richtlinien für die Umsetzung von KI-Ideen zu praktischen Lösungen im Unternehmen entwickelt werden. Es muss damit begonnen werden, KI auch in den Kernprozess der Wirtschaftsprüfung zu integrieren.", 
+"Um das nächste Reifelevel zu erreichen, sollten die KI-Kompetenzen in Ihrem Unternehmen in spezifischen Abteilungen oder Teams gebündelt werden. Einzelne Prozesse sollten automatisiert und KI in die Kern- und unterstützenden Prozesse der Wirtschaftsprüfung integriert werden.", 
+"Um das nächste Reifelevel zu erreichen, sollte eine zentrale KI-Abteilung im Unternehmen eingerichtet und der Einsatz von KI-Instrumenten weiter im Unternehmen verbreitet werden. Zudem sollte die vollständige Automatisierung von Unternehmensprozessen verfolgt werden.", 
+"Die KI bezogene Organisation und die zugehörigen Prozesse sind in Ihrem Unternehmen bereits optimal an den Einsatz von KI angepasst!"]
+
+var Empfehlung5 =
+["Um den Reifegrad Ihres Unternehmens zu erhöhen sollte das Management sich mit potentiellen Auswirkungen und Vorteilen durch den Einsatz von KI auseinandersetzen. Dabei ist es auch hilfreich, Zielvorstellungen für den Einsatz von KI zu formulieren.",
+"Um den Reifegrad Ihres Unternehmens zu erhöhen sollte in Ihrem Unternehmen eine KI-Strategie entwickelt und ein Konzept für die Einführung und Implementierung von KI formuliert werden. Stellen Sie sicher, dass die Zielsetzungen für den Einsatz von KI mit den Geschäftszielen des Managements vereinbar sind.",
+"Um den Reifegrad Ihres Unternehmens zu erhöhen sollte Ihre KI-Strategie zu einem festen Bestandteil der unternehmensübergreifenden Strategie und KI in der strategischen Planung des Unternehmens berücksichtigt werden.",
+"Um den Reifegrad Ihres Unternehmens zu erhöhen sollte KI genutzt werden, um die Entscheidungsfindung des Unternehmens zu optimieren und zu automatisieren und neue Geschäftsmodelle zu entwickeln.",
+"Die Anwendung von KI ist bereits optimal in Ihre Unternehmensstrategie und die Entscheidungen des Managements integriert!"]
+
+var Empfehlung6 = 
+["Damit Ihr Unternehmen die nächste Reifestufe erreichen kann, sollte ein geringes, initiales KI-Budget angelegt werden. Dieses kann bspw. durch andere Budgets des Unternehmens gestützt werden.",
+"Damit Ihr Unternehmen die nächste Reifestufe erreichen kann, sollte ein mittleres KI-Budget fest im Unternehmen etabliert werden. Dieses kann bspw. aus anderen Budgets gespeist werden oder zu einem Bestandteil anderer, bereits etabliert Budgets werden.",
+"Damit Ihr Unternehmen die nächste Reifestufe erreichen kann, sollte das KI-Budget im Unternehmen erhöht werden und Unternehmensbereichen spezielle KI-Budgets zur Verfügung gestellt werden.",
+"Damit Ihr Unternehmen die nächste Reifestufe erreichen kann, sollte für das gesamte Unternehmen ein spezifisches KI-Budget angelegt werden, welches ausreicht, um die Weiterentwicklung und Verbesserung von KI-Lösungen zu ermöglichen.",
+"Das KI-Budget Ihres Unternehmens wird bereits optimal eingesetzt!"]
+
+var Empfehlung7 = 
+["Der aktuelle Reifegrad Ihres Unternehmens kann erhöht werden, indem Sie erste Fälle von KI in der Wirtschaftsprüfung für die interne Anwendung identifizieren, austesten und den Bedarf im Unternehmen kommunizieren.",
+"Der aktuelle Reifegrad Ihres Unternehmens kann erhöht werden, indem Sie zusätzlich zu der internen Anwendung erste Fälle von KI in der Wirtschaftsprüfung für die Anwendung in externen Produkten und Dienstleistungen identifizieren, Ihren Kunden gegenüber kommunizieren und umsetzen. Weiterhin sollte die Auswirkung der KI-Anwendung für Leistungen der Wirtschaftsprüfung auf Kundenverträge identifiziert werden.",
+"Der aktuelle Reifegrad Ihres Unternehmens kann erhöht werden, indem Sie KI als kritischen Bestandteil der Produkt- und Dienstleistungsentwicklung für Kunden implementieren und in internen und externen Produkten oder Dienstleistungen einsetzen. Die Anwendung von KI sollte zudem in bestehende und neu geschlossene Kundenverträge eingebunden werden.",
+"Der aktuelle Reifegrad Ihres Unternehmens kann erhöht werden, indem Sie den Einfluss von KI auf alle Produkte und Dienstleistungen des Unternehmens ausweiten. Alle potentiellen internen sowie externen B2C und B2B Anwendungen sollten wahrgenommen werden.",
+"KI wird in bereits optimal für die Produkte und Dienstleistungen Ihres Unternehmens eingesetzt!"]
+
+var Empfehlung8 = 
+["Um eine Steigerung des Reifegrades zu erreichen, sollte in Ihrem Unternehmen mit der Entwicklung von Konzepten für die Einhaltung ethischer Grundsätze sowie von Maßnahmen für die Einhaltung von Regulatorik und Datenschutzrichtlinien bei der Anwendung von KI begonnen werden.", 
+"Um eine Steigerung des Reifegrades zu erreichen, sollten bei der Entwicklung von KI-Systemen in Ihrem Unternehmen definierte Maßnahmen zur Einhaltung der Regulatorik befolgt werden und ethische Grundsätze für die Anwendung von KI identifiziert und kommuniziert werden. Weiterhin sollten erste Untersuchungen von Dokumentation, Transparenz, Fairness und Nachhaltigkeit von KI im Unternehmen durchgeführt werden.", 
+"Um eine Steigerung des Reifegrades zu erreichen, sollte die KI in Ihrem Unternehmen sich zuverlässig an regulatorische Anforderungen und ethische Grundsätze halten. Weiterhin sollte die Nutzung von KI dokumentiert, transparent, fair und nachhaltig erfolgen.", 
+"Um das optimale Reifelevel zu erreichen, muss die Einhaltung von Regularien und ethischen Grundsätzen nicht nur ein fester Bestandteil der KI sein, sondern Ihr Unternehmen muss zudem dazu in der Lage sein, die KI-Systeme schnell und flexibel an Änderungen der Regulatorik anzupassen. Ein hohes Maß an Transparenz und Erklärbarkeit der KI-Systeme muss erreicht werden, damit sie von Mitarbeitern, Kunden und Aufsichtsbehörden als vertrauenswürdig eingeschätzt werden.", 
+"Die KI in Ihrem Unternehmen folgt bereits optimal ethischen und regulatorischen Grundsätzen!"]
 
 //Anzeige der Handlungsempfehlungen
 function ErgebnisEmpfehlung1() {
