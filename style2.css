@@ -64,6 +64,13 @@ hr {
   border-radius: 300px;
 }
 
+.btn:focus {
+  background-color: #025388;
+  border-color: #025388;
+  outline: none;
+  box-shadow: none;
+}
+
 .btn-primary{
   background-color: #025388;
   border-color: #025388;
@@ -109,4 +116,10 @@ canvas {
  .accordion-button:not(.collapsed) {
   background-color: rgba(2, 83, 136, 0.1);
   color: rgba(4, 66, 107);
+}
+
+
+ .accordion-button:focus {
+  outline: none;
+  box-shadow: none;
 }

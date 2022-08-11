@@ -31,6 +31,11 @@ hr {
   border-radius: 300px;
 }
 
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
 .btn-primary{
   background-color: #025388;
   border-color: #025388;

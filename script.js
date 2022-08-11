@@ -41,32 +41,10 @@ function displayRadioValue() {
   let section19Total = 0
   let section20Total = 0
   let section21Total = 0
-  let section1Question = 0
-  let section2Question = 0
-  let section3Question = 0
-  let section4Question = 0
-  let section5Question = 0
-  let section6Question = 0
-  let section7Question = 0
-  let section8Question = 0
-  let section9Question = 0
-  let section10Question = 0
-  let section11Question = 0
-  let section12Question = 0
-  let section13Question = 0
-  let section14Question = 0
-  let section15Question = 0
-  let section16Question = 0
-  let section17Question = 0
-  let section18Question = 0
-  let section19Question = 0
-  let section20Question = 0
-  let section21Question = 0
 
   //Section 1.1
   section1.forEach(function(radio, index) {
     if (radio.checked) {
-      section1Question++
       section1Total += +radio.value
     }
   })
@@ -74,7 +52,6 @@ function displayRadioValue() {
   //Section 1.2
   section2.forEach(function(radio, index) {
     if (radio.checked) {
-      section2Question++
       section2Total += +radio.value
     }
   })
@@ -82,7 +59,6 @@ function displayRadioValue() {
    //Section 1.3
   section3.forEach(function(radio, index) {
     if (radio.checked) {
-      section3Question++
       section3Total += +radio.value
     }
   })
@@ -90,7 +66,6 @@ function displayRadioValue() {
   //Section 2.1
   section4.forEach(function(radio, index) {
     if (radio.checked) {
-      section4Question++
       section4Total += +radio.value
     }
   })
@@ -98,7 +73,6 @@ function displayRadioValue() {
   //Section 2.2
   section5.forEach(function(radio, index) {
     if (radio.checked) {
-      section5Question++
       section5Total += +radio.value
     }
   })
@@ -106,14 +80,12 @@ function displayRadioValue() {
    //Section 2.3
   section6.forEach(function(radio, index) {
     if (radio.checked) {
-      section6Question++
       section6Total += +radio.value
     }
   })
     //Section 3.1
   section7.forEach(function(radio, index) {
     if (radio.checked) {
-      section7Question++
       section7Total += +radio.value
     }
   })
@@ -121,7 +93,6 @@ function displayRadioValue() {
   //Section 3.2
   section8.forEach(function(radio, index) {
     if (radio.checked) {
-      section8Question++
       section8Total += +radio.value
     }
   })
@@ -129,7 +100,6 @@ function displayRadioValue() {
    //Section 3.3
   section9.forEach(function(radio, index) {
     if (radio.checked) {
-      section9Question++
       section9Total += +radio.value
     }
   })
@@ -137,7 +107,6 @@ function displayRadioValue() {
     //Section 4.1
   section10.forEach(function(radio, index) {
     if (radio.checked) {
-      section10Question++
       section10Total += +radio.value
     }
   })
@@ -145,15 +114,13 @@ function displayRadioValue() {
   //Section 4.2
   section11.forEach(function(radio, index) {
     if (radio.checked) {
-      section11Question++
-      section11Total += +radio.value
+    section11Total += +radio.value
     }
   })
 
    //Section 4.3
   section12.forEach(function(radio, index) {
     if (radio.checked) {
-      section12Question++
       section12Total += +radio.value
     }
   })
@@ -162,7 +129,6 @@ function displayRadioValue() {
     //Section 5.1
   section13.forEach(function(radio, index) {
     if (radio.checked) {
-      section13Question++
       section13Total += +radio.value
     }
   })
@@ -170,7 +136,6 @@ function displayRadioValue() {
   //Section 5.2
   section14.forEach(function(radio, index) {
     if (radio.checked) {
-      section14Question++
       section14Total += +radio.value
     }
   })
@@ -178,7 +143,6 @@ function displayRadioValue() {
     //Section 6.1
   section15.forEach(function(radio, index) {
     if (radio.checked) {
-      section15Question++
       section15Total += +radio.value
     }
   })
@@ -186,7 +150,6 @@ function displayRadioValue() {
   //Section 6.2
   section16.forEach(function(radio, index) {
     if (radio.checked) {
-      section16Question++
       section16Total += +radio.value
     }
   })
@@ -194,7 +157,6 @@ function displayRadioValue() {
    //Section 6.3
   section17.forEach(function(radio, index) {
     if (radio.checked) {
-      section17Question++
       section17Total += +radio.value
     }
   })
@@ -203,7 +165,6 @@ function displayRadioValue() {
     //Section 7.1
   section18.forEach(function(radio, index) {
     if (radio.checked) {
-      section18Question++
       section18Total += +radio.value
     }
   })
@@ -211,7 +172,6 @@ function displayRadioValue() {
   //Section 7.2
   section19.forEach(function(radio, index) {
     if (radio.checked) {
-      section19Question++
       section19Total += +radio.value
     }
   })
@@ -220,7 +180,6 @@ function displayRadioValue() {
     //Section 8.1
   section20.forEach(function(radio, index) {
     if (radio.checked) {
-      section20Question++
       section20Total += +radio.value
     }
   })
@@ -228,7 +187,6 @@ function displayRadioValue() {
   //Section 8.2
   section21.forEach(function(radio, index) {
     if (radio.checked) {
-      section21Question++
       section21Total += +radio.value
     }
   })
@@ -258,7 +216,7 @@ function displayRadioValue() {
    //Dimension 8
   let sect8 = encodeURIComponent(((section20Total + section21Total) / 2).toFixed(2))
 
-  //Weiterleitung zu den Ergebnissen
+  //Anzeige der gewünschten URL
   window.location.href = "result.html?section1="+sect1+"&section2="+sect2+"&section3="+sect3+
   "&section4="+sect4+"&section5="+sect5+"&section6="+sect6+"&section7="+sect7+"&section8="+sect8;
 }
