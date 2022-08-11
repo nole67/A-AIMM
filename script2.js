@@ -1,5 +1,3 @@
-
-
 //Ergebnisse für jede Dimnension
 let section1Res = document.querySelector('.section-1-results')
 let section2Res = document.querySelector('.section-2-results')

@@ -50,12 +50,28 @@ hr {
   padding:  1rem 2rem;
 }
 
+a:link {
+  text-decoration: none;
+}
+
 .Link-m {
   color: #025388;
+}
+
+.Link-m:visited {
+  text-decoration: none;
+}
+
+.Link-m:hover {
+  color: #04426B;
 }
 
 .Link-s {
   color: #025388;
   font-size: 0.6em;
   margin: 5px;
+}
+
+.Link-s:hover {
+  color: #04426B;
 }
